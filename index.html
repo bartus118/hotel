@@ -2,222 +2,211 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nad Rudawą - Hotelik dla psów</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-  <div class="header-inner">
-    <img src="images/logo.png" alt="Logo Nad Rudawą" class="logo">
-    <div class="header-text">
-      <h1>Nad Rudawą</h1>
-      <p>Hotelik dla psów</p>
+    <div class="header-inner">
+      <img src="images/logo.png" alt="Logo Nad Rudawą" class="logo">
+      <div class="header-text">
+        <h1>Nad Rudawą</h1>
+        <p>Hotelik dla psów</p>
+      </div>
+      <nav>
+        <ul id="navMenu">
+          <li><a href="#onas">O nas</a></li>
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#cennik">Cennik</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+        <div id="burgerMenu" class="burger-menu">
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+          <div class="burger-line"></div>
+        </div>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#onas">O nas</a></li>
-        <li><a href="#oferta">Oferta</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#cennik">Cennik</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  </header>
 
   <section class="hero">
   <h2>Domowa opieka dla Twojego psa</h2>
   <p>Bezklatkowy hotel wśród natury, z całodobową opieką.</p>
   <div class="hero-image">
-    <img src="https://placedog.net/400/300?id=8" alt="Piesek w hotelu" class="hero-dog-image">
+    <img src="https://placedog.net/1200/800" alt="Piesek w hotelu" class="hero-dog-image" id="heroImage">
   </div>
   <button>Zarezerwuj pobyt</button>
 </section>
   
   <section class="about-us" id="onas">
-  <h2>O nas</h2>
-  <div class="about-content">
-    <p>
-      Witaj w <strong>Nad Rudawą</strong> – miejscu, gdzie pieski czują się jak w domu (czasem nawet lepiej 😄).
-      Nasza rodzinna ekipa to miłośnicy wszystkich ogoniastych, kudłatych i merdających ogonem stworzeń!
-    </p>
-    <p>
-      Mamy duży, ogrodzony ogród, który działa jak prywatny park rozrywki dla psów – ganianie za patykami,
-      tarzanie się w trawie i chill pod drzewem w cenie każdej doby 🐕🌳
-    </p>
-    <p>
-      U nas nie ma klatek – są kanapy, legowiska i pełna wolność (w granicach dobrego smaku i regulaminu 😉).
-    </p>
-    <p>
-      Mieszkamy w spokojnej okolicy, a sąsiedzi to sami psiolubni ludzie – nie zdziw się, jeśli Twój pupil wróci
-      do domu z nowymi znajomymi (czworonożnymi i dwunożnymi).
-    </p>
-    <p>
-      Jeśli chcesz zostawić swojego pupila w miejscu, gdzie będzie traktowany jak członek rodziny – jesteś we
-      właściwym miejscu. Czekamy na Ciebie i Twojego futrzastego przyjaciela!
-    </p>
-	<!-- Przycisk powrotu na górę -->
-<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-  Powrót na górę
-</button>
-  </div>
-</section>
+    <h2>O nas</h2>
+    <div class="about-content">
+      <p>
+        Witaj w <strong>Nad Rudawą</strong> – miejscu, gdzie pieski czują się jak w domu (czasem nawet lepiej 😄).
+        Nasza rodzinna ekipa to miłośnicy wszystkich ogoniastych, kudłatych i merdających ogonem stworzeń!
+      </p>
+      <p>
+        Mamy duży, ogrodzony ogród, który działa jak prywatny park rozrywki dla psów – ganianie za patykami,
+        tarzanie się w trawie i chill pod drzewem w cenie każdej doby 🐕🌳
+      </p>
+      <p>
+        U nas nie ma klatek – są kanapy, legowiska i pełna wolność (w granicach dobrego smaku i regulaminu 😉).
+      </p>
+      <p>
+        Mieszkamy w spokojnej okolicy, a sąsiedzi to sami psiolubni ludzie – nie zdziw się, jeśli Twój pupil wróci
+        do domu z nowymi znajomymi (czworonożnymi i dwunożnymi).
+      </p>
+      <p>
+        Jeśli chcesz zostawić swojego pupila w miejscu, gdzie będzie traktowany jak członek rodziny – jesteś we
+        właściwym miejscu. Czekamy na Ciebie i Twojego futrzastego przyjaciela!
+      </p>
+    </div>
+  </section>
   
-<section class="why-us">
-  <h2>Dlaczego my?</h2>
-  <div class="features">
-    <div class="feature">
-      <img src="images/home.png" alt="Domowa opieka">
-      <h3>Domowa opieka</h3>
-      <p>Twój pies poczuje się jak w domu – bez klatek, z miłością i troską.</p>
+  <section class="why-us">
+    <h2>Dlaczego my?</h2>
+    <div class="features">
+      <div class="feature">
+        <img src="images/home.png" alt="Domowa opieka">
+        <h3>Domowa opieka</h3>
+        <p>Twój pies poczuje się jak w domu – bez klatek, z miłością i troską.</p>
+      </div>
+      <div class="feature">
+        <img src="images/nature.png" alt="Blisko natury">
+        <h3>Blisko natury</h3>
+        <p>Położenie nad Rudawą zapewnia spacery wśród zieleni i świeżego powietrza.</p>
+      </div>
+      <div class="feature">
+        <img src="images/clock.png" alt="Całodobowa opieka">
+        <h3>Całodobowa opieka</h3>
+        <p>Opieka 24/7 – zawsze jesteśmy przy Twoim pupilu.</p>
+      </div>
+      <div class="feature">
+        <img src="images/group.png" alt="Socjalizacja">
+        <h3>Socjalizacja</h3>
+        <p>Możliwość zabawy i kontaktu z innymi psami w bezpiecznym środowisku.</p>
+      </div>
     </div>
-    <div class="feature">
-      <img src="images/nature.png" alt="Blisko natury">
-      <h3>Blisko natury</h3>
-      <p>Położenie nad Rudawą zapewnia spacery wśród zieleni i świeżego powietrza.</p>
+  </section>
+
+  <section class="offer" id="oferta">
+    <h2>Oferta</h2>
+    <div class="offer-content">
+      <div class="offer-text">
+        <p>
+          Przyjmujemy psy oraz zwierzątka klatkowe z własnymi klatkami. Psy muszą posiadać książeczkę zdrowia z aktualnymi szczepieniami, muszą być zabezpieczone przed pchłami i kleszczami oraz odrobaczone.
+        </p>
+        <p>
+          Nie przyjmujemy nie wykastrowanych samców oraz suk w okresie rui.
+        </p>
+        <p>
+          Sposób żywienia jest indywidualnie ustalany z właścicielem psa.
+        </p>
+        <p>
+          Wszystkie rezerwacje terminów odbywają się telefonicznie.
+        </p>
+        <p>
+          Płatność za pobyt odbywa się w całości w dniu przyjęcia psa do hotelu.
+        </p>
+      </div>
+      <div class="offer-image">
+        <img src="https://placedog.net/400/300?id=7" alt="Śmieszny pies" class="funny-dog">
+      </div>
     </div>
-    <div class="feature">
-      <img src="images/clock.png" alt="Całodobowa opieka">
-      <h3>Całodobowa opieka</h3>
-      <p>Opieka 24/7 – zawsze jesteśmy przy Twoim pupilu.</p>
+  </section>
+
+  <section class="gallery" id="galeria">
+    <h2>Galeria</h2>
+    <div class="gallery-grid">
+      <img src="https://placedog.net/400/300?id=1" alt="Piesek 1">
+	  <img src="https://placedog.net/400/300?id=2" alt="Piesek 2">
+	  <img src="https://placedog.net/400/300?id=3" alt="Piesek 3">
+ 	  <img src="https://placedog.net/400/300?id=4" alt="Piesek 4">
+	  <img src="https://placedog.net/400/300?id=5" alt="Piesek 5">
+	  <img src="https://placedog.net/400/300?id=6" alt="Piesek 6">
     </div>
-    <div class="feature">
-      <img src="images/group.png" alt="Socjalizacja">
-      <h3>Socjalizacja</h3>
-      <p>Możliwość zabawy i kontaktu z innymi psami w bezpiecznym środowisku.</p>
-	  
-	  <!-- Przycisk powrotu na górę -->
-<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-  Powrót na górę
-</button>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section class="offer" id="oferta">
-  <h2>Oferta</h2>
-  <div class="offer-content">
-    <div class="offer-text">
-      <p>
-        Przyjmujemy psy oraz zwierzątka klatkowe z własnymi klatkami. Psy muszą posiadać książeczkę zdrowia z aktualnymi szczepieniami, muszą być zabezpieczone przed pchłami i kleszczami oraz odrobaczone.
-      </p>
-      <p>
-        Nie przyjmujemy nie wykastrowanych samców oraz suk w okresie rui.
-      </p>
-      <p>
-        Sposób żywienia jest indywidualnie ustalany z właścicielem psa.
-      </p>
-      <p>
-        Wszystkie rezerwacje terminów odbywają się telefonicznie.
-      </p>
-      <p>
-        Płatność za pobyt odbywa się w całości w dniu przyjęcia psa do hotelu.
-      </p>
-    </div>
-    <div class="offer-image">
-      <img src="https://placedog.net/400/300?id=7" alt="Śmieszny pies" class="funny-dog">
-	  
-	  <!-- Przycisk powrotu na górę -->
-<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-  Powrót na górę
-</button>
-    </div>
-  </div>
-</section>
-
-<section class="gallery" id="galeria">
-  <h2>Galeria</h2>
-  <div class="gallery-grid">
-    <img src="https://placedog.net/400/300?id=1" alt="Piesek 1">
-    <img src="https://placedog.net/400/300?id=2" alt="Piesek 2">
-    <img src="https://placedog.net/400/300?id=3" alt="Piesek 3">
-    <img src="https://placedog.net/400/300?id=4" alt="Piesek 4">
-    <img src="https://placedog.net/400/300?id=5" alt="Piesek 5">
-    <img src="https://placedog.net/400/300?id=6" alt="Piesek 6">
-	
-	<!-- Przycisk powrotu na górę -->
-<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-  Powrót na górę
-</button>
-  </div>
-</section>
-
-
-<section class="pricing" id="cennik">
-  <h2>Cennik</h2>
-
-  <div class="price-table">
-    <div class="price-item">
-      <h3>Mały i średni pies</h3>
-      <p class="price">70 PLN / doba</p>
-      <p>Przykłady: york, shih-tzu, beagle, spaniel</p>
-    </div>
-
-    <div class="price-item">
-      <h3>Duży pies</h3>
-      <p class="price">80 PLN / doba</p>
-      <p>Przykłady: labrador, golden, owczarek niemiecki, berneńczyk</p>
-    </div>
-  </div>
-
-  <div class="price-notes">
-    <h3>Zasady naliczania doby hotelowej</h3>
-    <p>Doba hotelowa zaczyna się w chwili przyjęcia psa i kończy następnego dnia o tej samej godzinie.</p>
-    <p>Przekroczenie doby:</p>
-    <ul>
-      <li>do 5 godzin – dopłata 50% ceny</li>
-      <li>powyżej 5 godzin – opłata jak za kolejną dobę</li>
-    </ul>
-
-    <h3>Wyżywienie (opcjonalnie)</h3>
-    <ul>
-      <li>5 zł / doba – 200g suchej karmy + mokra</li>
-      <li>10 zł / doba – 400g suchej karmy + mokra</li>
-    </ul>
-
-    <h3>Dni świąteczne</h3>
-    <p>W dni świąteczne cena doby hotelowej wynosi <strong>100 PLN</strong>.</p>
-	
-	<!-- Przycisk powrotu na górę -->
-<button class="back-to-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
-  Powrót na górę
-</button>
-  </div>
-</section>
-
-
-<section class="contact" id="kontakt">
-  <h2>Kontakt</h2>
-  
-  <div class="contact-info">
-    <p>Skontaktuj się z nami!</p>
-    <ul>
-      <li><strong>Telefon:</strong> <a href="tel:+123456789">+12 345 6789</a></li>
-      <li><strong>Email:</strong> <a href="mailto:kontakt@nadrudawa.pl">kontakt@nadrudawa.pl</a></li>
-      <li><strong>Adres:</strong> Nad Rudawą 123, 00-000 Miasto</li>
-    </ul>
-  </div>
-  
-  <div class="contact-form">
-    <h3>Wyślij wiadomość</h3>
-    <form action="mailto:kontakt@nadrudawa.pl" method="POST" enctype="multipart/form-data">
-      <label for="name">Imię i nazwisko</label>
-      <input type="text" id="name" name="name" required>
+  <section class="pricing" id="cennik">
+    <h2>Cennik</h2>
+    
+    <div class="price-table">
+      <div class="price-item">
+        <h3>Zwierzęta klatkowe</h3>
+        <p class="price">40</p>
+        <p>Idealne dla małych zwierząt w klatkach, takich jak ptaki, gryzonie itp.</p>
+      </div>
       
-      <label for="email">Adres e-mail</label>
-      <input type="email" id="email" name="email" required>
-      
-      <label for="message">Wiadomość</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-      
-      <button type="submit">Wyślij</button>
-    </form>
-  </div>
-</section>
+      <div class="price-item">
+        <h3>Mały i średni pies</h3>
+        <p class="price">70</p>
+        <p>Przykłady: york, shih-tzu, beagle, spaniel</p>
+      </div>
 
+      <div class="price-item">
+        <h3>Duży pies</h3>
+        <p class="price">80</p>
+        <p>Przykłady: labrador, golden, owczarek niemiecki, berneńczyk</p>
+      </div>
+    </div>
+
+    <div class="price-notes">
+      <h3>Zasady naliczania doby hotelowej</h3>
+      <p>Doba hotelowa zaczyna się w chwili przyjęcia psa i kończy następnego dnia o tej samej godzinie.</p>
+      <p>Przekroczenie doby:</p>
+      <ul>
+        <li>do 5 godzin – dopłata 50% ceny</li>
+        <li>powyżej 5 godzin – opłata jak za kolejną dobę</li>
+      </ul>
+
+      <h3>Wyżywienie (opcjonalnie)</h3>
+      <ul>
+        <li>5 zł / doba – 200g suchej karmy + mokra</li>
+        <li>10 zł / doba – 400g suchej karmy + mokra</li>
+      </ul>
+
+      <h3>Dni świąteczne</h3>
+      <p>W dni świąteczne cena doby hotelowej wynosi <strong>100 zł</strong>.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="kontakt">
+    <h2>Kontakt</h2>
+    
+    <div class="contact-info">
+      <p>Skontaktuj się z nami!</p>
+      <ul>
+        <li><strong>Telefon:</strong> <a href="tel:+123456789">+12 345 6789</a></li>
+        <li><strong>Email:</strong> <a href="mailto:kontakt@nadrudawa.pl">kontakt@nadrudawa.pl</a></li>
+        <li><strong>Adres:</strong> Nad Rudawą 123, 00-000 Miasto</li>
+      </ul>
+    </div>
+    
+    <div class="contact-form">
+      <h3>Wyślij wiadomość</h3>
+      <form id="contactForm" action="mailto:kontakt@nadrudawa.pl" method="POST" enctype="multipart/form-data">
+        <label for="name">Imię i nazwisko</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="email">Adres e-mail</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="message">Wiadomość</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        
+        <button type="submit">Wyślij</button>
+      </form>
+    </div>
+  </section>
+
+  <button class="back-to-top" title="Powrót na górę">↑</button>
 
   <footer>
     <p>&copy; 2025 Nad Rudawą | Kontakt: kontakt@nadrudawa.pl</p>
   </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
