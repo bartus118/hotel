@@ -1,0 +1,427 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f5f5f0;
+  color: #333;
+}
+
+header {
+  background-color: #a3c6a0;
+  color: white;
+  padding: 20px;
+  text-align: center;
+ 
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: white;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 1em;
+  color: #f0f0f0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('images/pies.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2em;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  margin-bottom: 20px;
+}
+
+.hero-dog-image {
+  width: 80%; /* Zajmuje 80% szerokości kontenera */
+  max-width: 600px; /* Maksymalna szerokość obrazu */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+
+footer {
+  background-color: #ddd;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.why-us {
+  background-color: #e8f5e9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #2e7d32;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.feature {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #388e3c;
+}
+
+.feature p {
+  font-size: 0.95em;
+  color: #555555;
+}
+
+.pricing {
+  background-color: #fff9f2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pricing h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.price-table {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.price-item {
+  background-color: #fff;
+  border: 2px solid #ffcf8b;
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.price-item h3 {
+  color: #4caf50;
+  font-size: 1.2em;
+}
+
+.price-item .price {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #ff9800;
+  margin: 10px 0;
+}
+
+.price-notes {
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto;
+  background-color: #fffefc;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ffe0b2;
+}
+
+.price-notes h3 {
+  color: #333;
+  margin-top: 20px;
+}
+
+.price-notes p,
+.price-notes li {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.price-notes ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.about-us {
+  background-color: #fefefe;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1em;
+  line-height: 1.7;
+  color: #444;
+  text-align: left;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+}
+.gallery {
+  background-color: #fff9f2;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+.offer {
+  background-color: #e8f5e9;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.offer h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #2e7d32;
+}
+
+.offer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.offer-text {
+  flex: 1;
+  font-size: 1em;
+  line-height: 1.7;
+  color: #444;
+  text-align: left;
+}
+
+.offer-image {
+  flex-shrink: 0;
+  max-width: 300px;
+}
+
+.offer-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.offer-image img:hover {
+  transform: scale(1.05);
+}
+
+/* Stylizacja przycisku powrotu na górę */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #4caf50; /* Kolor tła */
+  color: white; /* Kolor tekstu */
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50%;
+  font-size: 1.2em;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Zapewnia, że przycisk będzie zawsze na wierzchu */
+  transition: background-color 0.3s ease;
+}
+
+/* Zmiana koloru tła przycisku po najechaniu */
+.back-to-top:hover {
+  background-color: #45a049;
+}
+
+/* Stylizacja sekcji kontaktowej */
+.contact {
+  background-color: #f5f5f0;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.contact-info {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1em;
+  text-align: left;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin: 10px 0;
+}
+
+.contact-info a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #4caf50;
+}
+
+.contact-form label {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  display: block;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: #4caf50;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #45a049;
+}
+
