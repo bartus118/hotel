@@ -67,11 +67,11 @@ document.getElementById('contactForm')?.addEventListener('submit', function(e) {
 // Pokaz slajdów w sekcji hero
 const heroImage = document.getElementById('heroImage');
 const dogImageUrls = [
-  'https://placedog.net/1200/800?id=1',
-  'https://placedog.net/1200/800?id=2',
-  'https://placedog.net/1200/800?id=3',
-  'https://placedog.net/1200/800?id=4',
-  'https://placedog.net/1200/800?id=5'
+  'images/slider/1.jpg',
+  'images/slider/2.jpg',
+  'images/slider/3.jpg',
+  'images/slider/4.jpg',
+  'images/slider/5.jpg'
 ];
 
 let currentImageIndex = 0;
