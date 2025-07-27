@@ -67,11 +67,11 @@ document.getElementById('contactForm')?.addEventListener('submit', function(e) {
 // Pokaz slajdów w sekcji hero
 const heroImage = document.getElementById('heroImage');
 const dogImageUrls = [
-  'images/slider/1.jpg',
-  'images/slider/2.jpg',
-  'images/slider/3.jpg',
-  'images/slider/4.jpg',
-  'images/slider/5.jpg'
+  'images/Slider/1.jpg',
+  'images/Slider/2.jpg',
+  'images/Slider/3.jpg',
+  'images/Slider/4.jpg',
+  'images/Slider/5.jpg'
 ];
 
 let currentImageIndex = 0;
