@@ -203,16 +203,23 @@ footer {
 
 .feature {
   background-color: #ffffff;
+  border: 2px solid #f4a261; /* Pomarańczowa obwódka */
   border-radius: 10px;
   padding: 20px;
   width: 220px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Tekst zaczyna się u góry */
 }
 
 .feature:hover {
   transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  border-color: #ff9800; /* Jaśniejszy pomarańczowy na hover */
 }
 
 .feature img {
@@ -255,17 +262,22 @@ footer {
 
 .price-item {
   background-color: #fff;
-  border: 2px solid #ffcf8b;
-  border-radius: 12px;
+  border: 2px solid #f4a261; /* Dodaje pomarańczową obwódkę */
+  border-radius: 15px;
   padding: 20px;
-  width: 280px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-  text-align: left;
-  transition: transform 0.3s;
+  width: 250px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: flex-start;
 }
-
 .price-item:hover {
-  transform: scale(1.03);
+  transform: translateY(-5px); /* lekko unosi przy najechaniu */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* mocniejszy cień */
 }
 
 .price-item h3 {
@@ -279,10 +291,7 @@ footer {
   margin: 10px 0;
 }
 
-.price-item .price:after {
-  content: " zł";
-  font-size: 0.8em;
-}
+
 
 .price-notes {
   max-width: 700px;
