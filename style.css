@@ -629,3 +629,48 @@ footer {
 .social-floating-icons a:hover {
   opacity: 0.8;
 }
+
+/* GALERIA powieksza zdjęcia i czatrne tło */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 2000;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+.lightbox-img {
+  max-width: 90vw;
+  max-height: 80vh;
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+}
+.lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 3em;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2100;
+  font-family: Arial, sans-serif;
+}
+.lightbox-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 3em;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  z-index: 2100;
+  padding: 0 20px;
+}
+.lightbox-prev {
+  left: 10px;
+}
+.lightbox-next {
+  right: 10px;
+}

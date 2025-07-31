@@ -97,3 +97,47 @@ function checkScroll() {
 
 window.addEventListener('load', checkScroll);
 window.addEventListener('scroll', checkScroll);
+
+// --- Lightbox dla galerii ---
+const galleryImages = Array.from(document.querySelectorAll('.gallery-grid img'));
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.querySelector('.lightbox-img');
+const closeBtn = document.querySelector('.lightbox-close');
+const prevBtn = document.querySelector('.lightbox-prev');
+const nextBtn = document.querySelector('.lightbox-next');
+let currentLightboxIndex = 0;
+
+galleryImages.forEach((img, idx) => {
+  img.addEventListener('click', function () {
+    currentLightboxIndex = idx;
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+function showLightboxImage(idx) {
+  if (idx < 0) idx = galleryImages.length - 1;
+  if (idx >= galleryImages.length) idx = 0;
+  currentLightboxIndex = idx;
+  lightboxImg.src = galleryImages[currentLightboxIndex].src;
+}
+
+prevBtn.onclick = function () {
+  showLightboxImage(currentLightboxIndex - 1);
+};
+nextBtn.onclick = function () {
+  showLightboxImage(currentLightboxIndex + 1);
+};
+closeBtn.onclick = function () {
+  lightbox.style.display = 'none';
+};
+lightbox.onclick = function (e) {
+  if (e.target === lightbox) lightbox.style.display = 'none';
+};
+document.addEventListener('keydown', function(e) {
+  if (lightbox.style.display === 'flex') {
+    if (e.key === 'ArrowLeft') prevBtn.click();
+    if (e.key === 'ArrowRight') nextBtn.click();
+    if (e.key === 'Escape') closeBtn.click();
+  }
+});
