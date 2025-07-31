@@ -589,3 +589,43 @@ footer {
   font-size: 2em;
   margin-bottom: 20px;
 }
+/* Ikonki social*/
+
+.social-floating-icons {
+  position: fixed;
+  top: 40%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 9999;
+}
+
+.social-floating-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  color: white;
+  font-size: 20px;
+  border-radius: 0 5px 5px 0;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-floating-icons a.facebook {
+  background-color: #3b5998;
+}
+
+.social-floating-icons a.instagram {
+  background-color: #e4405f;
+}
+
+.social-floating-icons a.whatsapp {
+  background-color: #25D366;
+}
+
+.social-floating-icons a:hover {
+  opacity: 0.8;
+}
